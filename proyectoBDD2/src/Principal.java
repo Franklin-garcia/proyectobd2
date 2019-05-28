@@ -144,11 +144,27 @@ public class Principal extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        jButton27 = new javax.swing.JButton();
-        tf_codpelicula_rep = new javax.swing.JTextField();
-        tf_codpersona_rep = new javax.swing.JTextField();
-        tf_nombre_rep = new javax.swing.JTextField();
-        tf_papel_rep = new javax.swing.JTextField();
+        crear_reparto = new javax.swing.JButton();
+        codigo_pelicula_crear_reparto = new javax.swing.JTextField();
+        codigo_persona_crear_reparto = new javax.swing.JTextField();
+        nombre_crear_reparto = new javax.swing.JTextField();
+        papel_crear_reparto = new javax.swing.JTextField();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        codigo_pelicula_modificar_reparto = new javax.swing.JTextField();
+        codigo_persona_modificar_reparto = new javax.swing.JTextField();
+        papel_modificar_reparto = new javax.swing.JTextField();
+        nombre_modificar_reparto = new javax.swing.JTextField();
+        Modificar_reparto = new javax.swing.JButton();
+        jPanel18 = new javax.swing.JPanel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        codigo_pelicula_eliminar_reparto = new javax.swing.JTextField();
+        codigo_persona_eliminar_reparto = new javax.swing.JTextField();
+        eliminar_reparto = new javax.swing.JButton();
         jd_proyeccion = new javax.swing.JDialog();
         jTabbedPane8 = new javax.swing.JTabbedPane();
         jPanel16 = new javax.swing.JPanel();
@@ -1014,7 +1030,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel43.setText("Papel");
 
-        jButton27.setText("crear");
+        crear_reparto.setText("crear");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -1026,11 +1042,11 @@ public class Principal extends javax.swing.JFrame {
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel39)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(tf_codpelicula_rep, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(codigo_pelicula_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel40)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                        .addComponent(tf_codpersona_rep, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(codigo_persona_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel41)
@@ -1041,9 +1057,9 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGap(129, 129, 129)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tf_nombre_rep, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tf_papel_rep, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombre_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(papel_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
@@ -1052,27 +1068,128 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
-                    .addComponent(tf_codpelicula_rep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_pelicula_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel40)
-                    .addComponent(tf_codpersona_rep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_persona_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel41)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel42)
-                    .addComponent(tf_nombre_rep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombre_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel43)
-                    .addComponent(tf_papel_rep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(papel_crear_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
-                .addComponent(jButton27)
+                .addComponent(crear_reparto)
                 .addContainerGap(57, Short.MAX_VALUE))
         );
 
         jTabbedPane7.addTab("Crear", jPanel15);
+
+        jLabel77.setText("Codigo pelicula");
+
+        jLabel78.setText("Codigo_persona");
+
+        jLabel79.setText("Papel");
+
+        jLabel80.setText("Nombre");
+
+        Modificar_reparto.setText("Modificar");
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel77)
+                            .addComponent(jLabel78)
+                            .addComponent(jLabel79)
+                            .addComponent(jLabel80))
+                        .addGap(41, 41, 41)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(codigo_pelicula_modificar_reparto)
+                            .addComponent(codigo_persona_modificar_reparto)
+                            .addComponent(papel_modificar_reparto)
+                            .addComponent(nombre_modificar_reparto, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(155, 155, 155)
+                        .addComponent(Modificar_reparto)))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel77)
+                    .addComponent(codigo_pelicula_modificar_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel78)
+                    .addComponent(codigo_persona_modificar_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel79)
+                    .addComponent(papel_modificar_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel80)
+                    .addComponent(nombre_modificar_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addComponent(Modificar_reparto)
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+
+        jTabbedPane7.addTab("Modificar", jPanel8);
+
+        jLabel75.setText("Codigo pelicula");
+
+        jLabel76.setText("Codigo persona");
+
+        eliminar_reparto.setText("Eliminar");
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel75)
+                    .addComponent(jLabel76))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(eliminar_reparto)
+                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(codigo_pelicula_eliminar_reparto, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                        .addComponent(codigo_persona_eliminar_reparto)))
+                .addContainerGap(67, Short.MAX_VALUE))
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel75)
+                    .addComponent(codigo_pelicula_eliminar_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel76)
+                    .addComponent(codigo_persona_eliminar_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(60, 60, 60)
+                .addComponent(eliminar_reparto)
+                .addContainerGap(78, Short.MAX_VALUE))
+        );
+
+        jTabbedPane7.addTab("Eliminar", jPanel18);
 
         javax.swing.GroupLayout jd_repartoLayout = new javax.swing.GroupLayout(jd_reparto.getContentPane());
         jd_reparto.getContentPane().setLayout(jd_repartoLayout);
@@ -1895,9 +2012,9 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addGroup(sLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                .addGroup(sLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton4)
+                    .addComponent(jButton3))
                 .addGap(18, 18, 18)
                 .addGroup(sLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5)
@@ -2066,6 +2183,15 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Modificar_reparto;
+    private javax.swing.JTextField codigo_pelicula_crear_reparto;
+    private javax.swing.JTextField codigo_pelicula_eliminar_reparto;
+    private javax.swing.JTextField codigo_pelicula_modificar_reparto;
+    private javax.swing.JTextField codigo_persona_crear_reparto;
+    private javax.swing.JTextField codigo_persona_eliminar_reparto;
+    private javax.swing.JTextField codigo_persona_modificar_reparto;
+    private javax.swing.JButton crear_reparto;
+    private javax.swing.JButton eliminar_reparto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -2085,7 +2211,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
@@ -2176,7 +2301,13 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -2187,6 +2318,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
@@ -2202,6 +2334,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane10;
@@ -2228,6 +2361,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JDialog jd_reparto;
     private javax.swing.JDialog jd_sala;
     private javax.swing.JDialog jd_trabajo;
+    private javax.swing.JTextField nombre_crear_reparto;
+    private javax.swing.JTextField nombre_modificar_reparto;
+    private javax.swing.JTextField papel_crear_reparto;
+    private javax.swing.JTextField papel_modificar_reparto;
     private javax.swing.JPanel s;
     private javax.swing.JTextField tf_año;
     private javax.swing.JTextField tf_año1;
@@ -2262,12 +2399,10 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_codpelicula_pelicula;
     private javax.swing.JTextField tf_codpelicula_pelicula1;
     private javax.swing.JTextField tf_codpelicula_pelicula2;
-    private javax.swing.JTextField tf_codpelicula_rep;
     private javax.swing.JTextField tf_codpersona;
     private javax.swing.JTextField tf_codpersona1;
     private javax.swing.JTextField tf_codpersona2;
     private javax.swing.JTextField tf_codpersona_rec;
-    private javax.swing.JTextField tf_codpersona_rep;
     private javax.swing.JTextField tf_codpremio_pf;
     private javax.swing.JTextField tf_codpremio_rec;
     private javax.swing.JTextField tf_codsala_pro;
@@ -2286,10 +2421,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_nombre1;
     private javax.swing.JTextField tf_nombre_persona;
     private javax.swing.JTextField tf_nombre_persona1;
-    private javax.swing.JTextField tf_nombre_rep;
     private javax.swing.JTextField tf_organizacion;
     private javax.swing.JTextField tf_organizacion1;
-    private javax.swing.JTextField tf_papel_rep;
     private javax.swing.JTextField tf_premio;
     private javax.swing.JTextField tf_premio1;
     private javax.swing.JTextField tf_presupuesto;
