@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author franklin
- */
+
 public class Principal extends javax.swing.JFrame {
 
     /**
@@ -15,6 +12,7 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        
     }
 
     /**
@@ -123,19 +121,19 @@ public class Principal extends javax.swing.JFrame {
         jPanel12 = new javax.swing.JPanel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
-        tf_cod_premio = new javax.swing.JTextField();
-        tf_premio = new javax.swing.JTextField();
-        jButton24 = new javax.swing.JButton();
+        codigo_premio_crear_premio = new javax.swing.JTextField();
+        premio_crear_premio = new javax.swing.JTextField();
+        crear_premio = new javax.swing.JButton();
         jPanel13 = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-        tf_cod_premio1 = new javax.swing.JTextField();
-        tf_premio1 = new javax.swing.JTextField();
-        jButton25 = new javax.swing.JButton();
+        cod_premio_modificar_premio = new javax.swing.JTextField();
+        premio_modificar_premio = new javax.swing.JTextField();
+        modificar_premio = new javax.swing.JButton();
         jPanel14 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
-        tf_cod_premio2 = new javax.swing.JTextField();
-        jButton26 = new javax.swing.JButton();
+        codigo_premio_eliminar_premio = new javax.swing.JTextField();
+        eliminar_premio = new javax.swing.JButton();
         jd_reparto = new javax.swing.JDialog();
         jTabbedPane7 = new javax.swing.JTabbedPane();
         jPanel15 = new javax.swing.JPanel();
@@ -199,13 +197,13 @@ public class Principal extends javax.swing.JFrame {
         jLabel55 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
-        tf_cod_sala1 = new javax.swing.JTextField();
-        tf_capacidad1 = new javax.swing.JTextField();
-        tf_tipo_sala1 = new javax.swing.JTextField();
-        jButton30 = new javax.swing.JButton();
+        codigo_sala_modificar_sala = new javax.swing.JTextField();
+        capacidad_modificar_sala = new javax.swing.JTextField();
+        tipo_sala_modificar_sala = new javax.swing.JTextField();
+        modificar_sala = new javax.swing.JButton();
         jPanel20 = new javax.swing.JPanel();
         jLabel59 = new javax.swing.JLabel();
-        tf_cod_sala2 = new javax.swing.JTextField();
+        codigo_sala_eliminar_sala = new javax.swing.JTextField();
         jButton31 = new javax.swing.JButton();
         jd_premiosf = new javax.swing.JDialog();
         jTabbedPane10 = new javax.swing.JTabbedPane();
@@ -893,7 +891,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel35.setText("premio");
 
-        jButton24.setText("crear");
+        crear_premio.setText("crear");
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -908,11 +906,11 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(jLabel35))
                         .addGap(46, 46, 46)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_premio, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_cod_premio, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(premio_crear_premio, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(codigo_premio_crear_premio, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addGap(150, 150, 150)
-                        .addComponent(jButton24)))
+                        .addComponent(crear_premio)))
                 .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
@@ -921,13 +919,13 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel34)
-                    .addComponent(tf_cod_premio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_premio_crear_premio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel35)
-                    .addComponent(tf_premio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(premio_crear_premio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(57, 57, 57)
-                .addComponent(jButton24)
+                .addComponent(crear_premio)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
@@ -937,7 +935,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel37.setText("premio");
 
-        jButton25.setText("modificar");
+        modificar_premio.setText("modificar");
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -952,11 +950,11 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(jLabel37))
                         .addGap(46, 46, 46)
                         .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_premio1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tf_cod_premio1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(premio_modificar_premio, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cod_premio_modificar_premio, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel13Layout.createSequentialGroup()
                         .addGap(150, 150, 150)
-                        .addComponent(jButton25)))
+                        .addComponent(modificar_premio)))
                 .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
@@ -965,13 +963,13 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel36)
-                    .addComponent(tf_cod_premio1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cod_premio_modificar_premio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel37)
-                    .addComponent(tf_premio1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(premio_modificar_premio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(57, 57, 57)
-                .addComponent(jButton25)
+                .addComponent(modificar_premio)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
@@ -979,7 +977,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel38.setText("Codigo premio");
 
-        jButton26.setText("eliminar");
+        eliminar_premio.setText("eliminar");
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
@@ -991,10 +989,10 @@ public class Principal extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel38)
                         .addGap(46, 46, 46)
-                        .addComponent(tf_cod_premio2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(codigo_premio_eliminar_premio, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGap(150, 150, 150)
-                        .addComponent(jButton26)))
+                        .addComponent(eliminar_premio)))
                 .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
@@ -1003,9 +1001,9 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel38)
-                    .addComponent(tf_cod_premio2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_premio_eliminar_premio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(92, 92, 92)
-                .addComponent(jButton26)
+                .addComponent(eliminar_premio)
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
@@ -1019,7 +1017,7 @@ public class Principal extends javax.swing.JFrame {
         );
         jd_premioLayout.setVerticalGroup(
             jd_premioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
+            .addComponent(jTabbedPane6)
         );
 
         jLabel39.setText("codigo pelicula");
@@ -1166,11 +1164,12 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(jLabel75)
                     .addComponent(jLabel76))
                 .addGap(23, 23, 23)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(eliminar_reparto)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(codigo_pelicula_eliminar_reparto, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
-                        .addComponent(codigo_persona_eliminar_reparto)))
+                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(codigo_pelicula_eliminar_reparto, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                    .addComponent(codigo_persona_eliminar_reparto)
+                    .addGroup(jPanel18Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(eliminar_reparto)))
                 .addContainerGap(67, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
@@ -1184,9 +1183,9 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel76)
                     .addComponent(codigo_persona_eliminar_reparto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(60, 60, 60)
+                .addGap(36, 36, 36)
                 .addComponent(eliminar_reparto)
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(102, Short.MAX_VALUE))
         );
 
         jTabbedPane7.addTab("Eliminar", jPanel18);
@@ -1381,7 +1380,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel58.setText("Tipo sala");
 
-        jButton30.setText("Modificar");
+        modificar_sala.setText("Modificar");
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -1395,18 +1394,18 @@ public class Principal extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel19Layout.createSequentialGroup()
                                 .addComponent(jLabel57)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(tf_capacidad1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(capacidad_modificar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel19Layout.createSequentialGroup()
                                 .addComponent(jLabel58)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(tf_tipo_sala1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(tipo_sala_modificar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel19Layout.createSequentialGroup()
                                 .addComponent(jLabel55)
                                 .addGap(52, 52, 52)
-                                .addComponent(tf_cod_sala1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(codigo_sala_modificar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel19Layout.createSequentialGroup()
                         .addGap(165, 165, 165)
-                        .addComponent(jButton30)))
+                        .addComponent(modificar_sala)))
                 .addContainerGap(90, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
@@ -1415,17 +1414,17 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel55)
-                    .addComponent(tf_cod_sala1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_sala_modificar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel57)
-                    .addComponent(tf_capacidad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(capacidad_modificar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel58)
-                    .addComponent(tf_tipo_sala1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tipo_sala_modificar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(81, 81, 81)
-                .addComponent(jButton30)
+                .addComponent(modificar_sala)
                 .addContainerGap(47, Short.MAX_VALUE))
         );
 
@@ -1445,7 +1444,7 @@ public class Principal extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel59)
                         .addGap(52, 52, 52)
-                        .addComponent(tf_cod_sala2, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(codigo_sala_eliminar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel20Layout.createSequentialGroup()
                         .addGap(177, 177, 177)
                         .addComponent(jButton31)))
@@ -1457,13 +1456,13 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel59)
-                    .addComponent(tf_cod_sala2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_sala_eliminar_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(81, 81, 81)
                 .addComponent(jButton31)
                 .addContainerGap(128, Short.MAX_VALUE))
         );
 
-        jTabbedPane9.addTab("Crear", jPanel20);
+        jTabbedPane9.addTab("Eliminar", jPanel20);
 
         javax.swing.GroupLayout jd_salaLayout = new javax.swing.GroupLayout(jd_sala.getContentPane());
         jd_sala.getContentPane().setLayout(jd_salaLayout);
@@ -2184,13 +2183,21 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Modificar_reparto;
+    private javax.swing.JTextField capacidad_modificar_sala;
+    private javax.swing.JTextField cod_premio_modificar_premio;
     private javax.swing.JTextField codigo_pelicula_crear_reparto;
     private javax.swing.JTextField codigo_pelicula_eliminar_reparto;
     private javax.swing.JTextField codigo_pelicula_modificar_reparto;
     private javax.swing.JTextField codigo_persona_crear_reparto;
     private javax.swing.JTextField codigo_persona_eliminar_reparto;
     private javax.swing.JTextField codigo_persona_modificar_reparto;
+    private javax.swing.JTextField codigo_premio_crear_premio;
+    private javax.swing.JTextField codigo_premio_eliminar_premio;
+    private javax.swing.JTextField codigo_sala_eliminar_sala;
+    private javax.swing.JTextField codigo_sala_modificar_sala;
+    private javax.swing.JButton crear_premio;
     private javax.swing.JButton crear_reparto;
+    private javax.swing.JButton eliminar_premio;
     private javax.swing.JButton eliminar_reparto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -2208,13 +2215,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
@@ -2361,15 +2364,18 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JDialog jd_reparto;
     private javax.swing.JDialog jd_sala;
     private javax.swing.JDialog jd_trabajo;
+    private javax.swing.JButton modificar_premio;
+    private javax.swing.JButton modificar_sala;
     private javax.swing.JTextField nombre_crear_reparto;
     private javax.swing.JTextField nombre_modificar_reparto;
     private javax.swing.JTextField papel_crear_reparto;
     private javax.swing.JTextField papel_modificar_reparto;
+    private javax.swing.JTextField premio_crear_premio;
+    private javax.swing.JTextField premio_modificar_premio;
     private javax.swing.JPanel s;
     private javax.swing.JTextField tf_año;
     private javax.swing.JTextField tf_año1;
     private javax.swing.JTextField tf_capacidad;
-    private javax.swing.JTextField tf_capacidad1;
     private javax.swing.JTextField tf_cine_direccion_insertar;
     private javax.swing.JTextField tf_cine_direccion_mod;
     private javax.swing.JTextField tf_ciudad_cine_insertar;
@@ -2380,12 +2386,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_cod_festival1;
     private javax.swing.JTextField tf_cod_festival2;
     private javax.swing.JTextField tf_cod_pelicula;
-    private javax.swing.JTextField tf_cod_premio;
-    private javax.swing.JTextField tf_cod_premio1;
-    private javax.swing.JTextField tf_cod_premio2;
     private javax.swing.JTextField tf_cod_sala;
-    private javax.swing.JTextField tf_cod_sala1;
-    private javax.swing.JTextField tf_cod_sala2;
     private javax.swing.JTextField tf_codcertamen;
     private javax.swing.JTextField tf_codcertamen1;
     private javax.swing.JTextField tf_codcertamen2;
@@ -2423,16 +2424,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_nombre_persona1;
     private javax.swing.JTextField tf_organizacion;
     private javax.swing.JTextField tf_organizacion1;
-    private javax.swing.JTextField tf_premio;
-    private javax.swing.JTextField tf_premio1;
     private javax.swing.JTextField tf_presupuesto;
     private javax.swing.JTextField tf_presupuesto1;
     private javax.swing.JTextField tf_recudacion;
     private javax.swing.JTextField tf_sexo;
     private javax.swing.JTextField tf_sexo1;
     private javax.swing.JTextField tf_tipo_sala;
-    private javax.swing.JTextField tf_tipo_sala1;
     private javax.swing.JTextField tf_titulo;
     private javax.swing.JTextField tf_titulo1;
+    private javax.swing.JTextField tipo_sala_modificar_sala;
     // End of variables declaration//GEN-END:variables
 }
