@@ -45,4 +45,12 @@ public class sqlclass {
             return null;
         }
     }
+    public void insertar(String datos){
+        try{
+            Statement st=conn();
+            st.executeUpdate(datos);
+        }catch(Exception e){
+            
+        }
+    }
 }

@@ -1168,6 +1168,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="crear"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="crear_premioActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1245,6 +1248,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="modificar"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modificar_premioActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1304,6 +1310,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="eliminar"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eliminar_premioActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1436,6 +1445,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="crear"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="crear_repartoActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="codigo_pelicula_crear_reparto">
                 </Component>
@@ -1549,6 +1561,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Modificar"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Modificar_repartoActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1622,6 +1637,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Eliminar"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eliminar_repartoActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1859,12 +1877,12 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="tf_capacidad" min="-2" pref="237" max="-2" attributes="0"/>
+                                          <Component id="capacidad_crear_sala" min="-2" pref="237" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="tf_tipo_sala" min="-2" pref="237" max="-2" attributes="0"/>
+                                          <Component id="tipo_sala_crear_sala" min="-2" pref="237" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1873,8 +1891,8 @@
                                           </Group>
                                           <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="tf_codcine_sala" min="-2" pref="237" max="-2" attributes="0"/>
-                                              <Component id="tf_cod_sala" min="-2" pref="237" max="-2" attributes="0"/>
+                                              <Component id="codigo_cine_crear_sala" min="-2" pref="237" max="-2" attributes="0"/>
+                                              <Component id="codigo_sala_crear_sala" min="-2" pref="237" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -1894,22 +1912,22 @@
                           <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel51" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tf_cod_sala" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="codigo_sala_crear_sala" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel52" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tf_codcine_sala" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="codigo_cine_crear_sala" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
-                              <Component id="tf_capacidad" min="-2" max="-2" attributes="0"/>
+                              <Component id="capacidad_crear_sala" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel54" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tf_tipo_sala" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="tipo_sala_crear_sala" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                           <Component id="jButton29" min="-2" max="-2" attributes="0"/>
@@ -1939,18 +1957,21 @@
                     <Property name="text" type="java.lang.String" value="Tipo sala"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="tf_cod_sala">
+                <Component class="javax.swing.JTextField" name="codigo_sala_crear_sala">
                 </Component>
-                <Component class="javax.swing.JTextField" name="tf_codcine_sala">
+                <Component class="javax.swing.JTextField" name="codigo_cine_crear_sala">
                 </Component>
-                <Component class="javax.swing.JTextField" name="tf_capacidad">
+                <Component class="javax.swing.JTextField" name="capacidad_crear_sala">
                 </Component>
-                <Component class="javax.swing.JTextField" name="tf_tipo_sala">
+                <Component class="javax.swing.JTextField" name="tipo_sala_crear_sala">
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton29">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="crear"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton29ActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -2048,6 +2069,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Modificar"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modificar_salaActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -2107,6 +2131,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Eliminar"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton31ActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>

@@ -188,10 +188,10 @@ public class Principal extends javax.swing.JFrame {
         jLabel52 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
-        tf_cod_sala = new javax.swing.JTextField();
-        tf_codcine_sala = new javax.swing.JTextField();
-        tf_capacidad = new javax.swing.JTextField();
-        tf_tipo_sala = new javax.swing.JTextField();
+        codigo_sala_crear_sala = new javax.swing.JTextField();
+        codigo_cine_crear_sala = new javax.swing.JTextField();
+        capacidad_crear_sala = new javax.swing.JTextField();
+        tipo_sala_crear_sala = new javax.swing.JTextField();
         jButton29 = new javax.swing.JButton();
         jPanel19 = new javax.swing.JPanel();
         jLabel55 = new javax.swing.JLabel();
@@ -892,6 +892,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel35.setText("premio");
 
         crear_premio.setText("crear");
+        crear_premio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crear_premioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -936,6 +941,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel37.setText("premio");
 
         modificar_premio.setText("modificar");
+        modificar_premio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificar_premioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -978,6 +988,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel38.setText("Codigo premio");
 
         eliminar_premio.setText("eliminar");
+        eliminar_premio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_premioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
@@ -1029,6 +1044,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel43.setText("Papel");
 
         crear_reparto.setText("crear");
+        crear_reparto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crear_repartoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -1097,6 +1117,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel80.setText("Nombre");
 
         Modificar_reparto.setText("Modificar");
+        Modificar_reparto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Modificar_repartoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -1153,6 +1178,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel76.setText("Codigo persona");
 
         eliminar_reparto.setText("Eliminar");
+        eliminar_reparto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_repartoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
@@ -1317,6 +1347,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel54.setText("Tipo sala");
 
         jButton29.setText("crear");
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -1330,19 +1365,19 @@ public class Principal extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel17Layout.createSequentialGroup()
                                 .addComponent(jLabel53)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(tf_capacidad, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(capacidad_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel17Layout.createSequentialGroup()
                                 .addComponent(jLabel54)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(tf_tipo_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(tipo_sala_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel17Layout.createSequentialGroup()
                                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel51)
                                     .addComponent(jLabel52))
                                 .addGap(52, 52, 52)
                                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tf_codcine_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(tf_cod_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(codigo_cine_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(codigo_sala_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGap(165, 165, 165)
                         .addComponent(jButton29)))
@@ -1354,19 +1389,19 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel51)
-                    .addComponent(tf_cod_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_sala_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel52)
-                    .addComponent(tf_codcine_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigo_cine_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel53)
-                    .addComponent(tf_capacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(capacidad_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel54)
-                    .addComponent(tf_tipo_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tipo_sala_crear_sala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
                 .addComponent(jButton29)
                 .addContainerGap(50, Short.MAX_VALUE))
@@ -1381,6 +1416,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel58.setText("Tipo sala");
 
         modificar_sala.setText("Modificar");
+        modificar_sala.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificar_salaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -1433,6 +1473,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel59.setText("codigo sala");
 
         jButton31.setText("Eliminar");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
@@ -2146,6 +2191,103 @@ public class Principal extends javax.swing.JFrame {
         jd_consultas.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
 
+    private void crear_repartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_repartoActionPerformed
+        try{
+            String datos=this.codigo_pelicula_crear_reparto.getText()+","+this.codigo_persona_crear_reparto.getText()+","
+                    +this.nombre_crear_reparto.getText()+","+this.papel_crear_reparto.getText();
+            String comando="INSERT INTO REPARTO(cod_pelicula,cod_persona,nombre,papel)VALUES("+datos+")";
+            query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_crear_repartoActionPerformed
+
+    private void Modificar_repartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Modificar_repartoActionPerformed
+        try{
+            String condicion ="(cod_pelicula ="+this.codigo_pelicula_modificar_reparto.getText()+")and(cod_persona = "+this.codigo_persona_modificar_reparto.getText()+")"; 
+            String modi= "nombre="+this.nombre_modificar_reparto.getText()+",papel = "+this.papel_modificar_reparto.getText();
+            String comando = "update REPARTO set "+modi+" where "+condicion;
+            query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_Modificar_repartoActionPerformed
+
+    private void eliminar_repartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_repartoActionPerformed
+        try{    
+            String condicion = "(cod_pelicula="+this.codigo_pelicula_eliminar_reparto.getText()+
+                    ")and(cod_persona = "+this.codigo_persona_eliminar_reparto.getText()+")";
+            String comando="delete from REPARTO where"+condicion;
+            query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_eliminar_repartoActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+       try{
+        String datos=this.codigo_sala_crear_sala.getText()+","+this.codigo_cine_crear_sala.getText()+","
+                +this.capacidad_crear_sala.getText()+","+this.tipo_sala_crear_sala.getText();
+        String comando="INSERT INTO SALA(cod_sala,cod_cine,capacidad,tipo_sala)VALUES("+datos+")";
+        query.insertar(comando);
+       }catch(Exception e){
+           
+       }
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void modificar_salaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_salaActionPerformed
+        try{ 
+        String condicion ="cod_sala ="+this.codigo_sala_modificar_sala.getText(); 
+        String modi= "capacidad="+this.nombre_modificar_reparto.getText()+",tipo_sala = "+this.papel_modificar_reparto.getText();
+        String comando = "update SALA set "+modi+" where "+condicion;
+        query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_modificar_salaActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        try{
+        String condicion = "cod_sala="+this.codigo_sala_eliminar_sala.getText();
+        String comando="delete from SALA where"+condicion;
+        query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void crear_premioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_premioActionPerformed
+        // TODO add your handling code here:
+        try{
+            String datos=this.codigo_premio_crear_premio.getText()+","+this.premio_crear_premio.getText();
+        String comando="INSERT INTO PREMIO(cod_premio,premio)VALUES("+datos+")";
+        query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_crear_premioActionPerformed
+
+    private void modificar_premioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_premioActionPerformed
+        try{ 
+            String condicion ="cod_preio ="+this.cod_premio_modificar_premio.getText(); 
+            String modi= "premio="+this.premio_modificar_premio.getText();
+            String comando = "update PREMIO set "+modi+" where "+condicion;
+            query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_modificar_premioActionPerformed
+
+    private void eliminar_premioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_premioActionPerformed
+         try{    
+            String condicion = "(cod_premio="+this.codigo_premio_eliminar_premio.getText();
+            String comando="delete from REPARTO where"+condicion;
+            query.insertar(comando);
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_eliminar_premioActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2183,8 +2325,10 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Modificar_reparto;
+    private javax.swing.JTextField capacidad_crear_sala;
     private javax.swing.JTextField capacidad_modificar_sala;
     private javax.swing.JTextField cod_premio_modificar_premio;
+    private javax.swing.JTextField codigo_cine_crear_sala;
     private javax.swing.JTextField codigo_pelicula_crear_reparto;
     private javax.swing.JTextField codigo_pelicula_eliminar_reparto;
     private javax.swing.JTextField codigo_pelicula_modificar_reparto;
@@ -2193,6 +2337,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField codigo_persona_modificar_reparto;
     private javax.swing.JTextField codigo_premio_crear_premio;
     private javax.swing.JTextField codigo_premio_eliminar_premio;
+    private javax.swing.JTextField codigo_sala_crear_sala;
     private javax.swing.JTextField codigo_sala_eliminar_sala;
     private javax.swing.JTextField codigo_sala_modificar_sala;
     private javax.swing.JButton crear_premio;
@@ -2375,7 +2520,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel s;
     private javax.swing.JTextField tf_año;
     private javax.swing.JTextField tf_año1;
-    private javax.swing.JTextField tf_capacidad;
     private javax.swing.JTextField tf_cine_direccion_insertar;
     private javax.swing.JTextField tf_cine_direccion_mod;
     private javax.swing.JTextField tf_ciudad_cine_insertar;
@@ -2386,14 +2530,12 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_cod_festival1;
     private javax.swing.JTextField tf_cod_festival2;
     private javax.swing.JTextField tf_cod_pelicula;
-    private javax.swing.JTextField tf_cod_sala;
     private javax.swing.JTextField tf_codcertamen;
     private javax.swing.JTextField tf_codcertamen1;
     private javax.swing.JTextField tf_codcertamen2;
     private javax.swing.JTextField tf_codcine_cine_eliminar;
     private javax.swing.JTextField tf_codcine_cine_insertar;
     private javax.swing.JTextField tf_codcine_cine_mod;
-    private javax.swing.JTextField tf_codcine_sala;
     private javax.swing.JTextField tf_codfestival_cer;
     private javax.swing.JTextField tf_codfestival_pf;
     private javax.swing.JTextField tf_codfestival_rec;
@@ -2429,9 +2571,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_recudacion;
     private javax.swing.JTextField tf_sexo;
     private javax.swing.JTextField tf_sexo1;
-    private javax.swing.JTextField tf_tipo_sala;
     private javax.swing.JTextField tf_titulo;
     private javax.swing.JTextField tf_titulo1;
+    private javax.swing.JTextField tipo_sala_crear_sala;
     private javax.swing.JTextField tipo_sala_modificar_sala;
     // End of variables declaration//GEN-END:variables
     public static sqlclass query = new sqlclass();
