@@ -21,7 +21,7 @@ public class sqlclass {
         try{
             DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
             System.out.println("Conectando a la base de datos.....");
-            Connection connection= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","HR","Sistemas2011");
+            Connection connection= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","HR","Password");
             Statement statement = connection.createStatement();
             return statement;
         }catch(Exception e){
