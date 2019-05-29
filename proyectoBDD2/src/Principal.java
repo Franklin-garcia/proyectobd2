@@ -1,3 +1,6 @@
+
+import java.util.LinkedList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -259,6 +262,17 @@ public class Principal extends javax.swing.JFrame {
         tf_codpersona2 = new javax.swing.JTextField();
         jButton38 = new javax.swing.JButton();
         jd_consultas = new javax.swing.JDialog();
+        jButton24 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        jButton39 = new javax.swing.JButton();
+        jButton40 = new javax.swing.JButton();
+        jButton41 = new javax.swing.JButton();
+        jButton42 = new javax.swing.JButton();
+        jButton43 = new javax.swing.JButton();
+        jButton44 = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         s = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -1905,15 +1919,130 @@ public class Principal extends javax.swing.JFrame {
             .addComponent(jTabbedPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        jButton24.setText("Consulta1");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+
+        jButton25.setText("Consulta2");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+
+        jButton26.setText("Consulta3");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+
+        jButton27.setText("Consulta4");
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
+
+        jButton30.setText("Consulta5");
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
+
+        jButton39.setText("Consulta6");
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
+
+        jButton40.setText("Consulta7");
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
+
+        jButton41.setText("Consulta8");
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
+
+        jButton42.setText("Consulta9");
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
+
+        jButton43.setText("Consulta10");
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
+
+        jButton44.setText("Consulta11");
+
         javax.swing.GroupLayout jd_consultasLayout = new javax.swing.GroupLayout(jd_consultas.getContentPane());
         jd_consultas.getContentPane().setLayout(jd_consultasLayout);
         jd_consultasLayout.setHorizontalGroup(
             jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(jd_consultasLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton43)
+                    .addComponent(jButton40)
+                    .addComponent(jButton27)
+                    .addComponent(jButton24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jd_consultasLayout.createSequentialGroup()
+                            .addComponent(jButton25)
+                            .addGap(27, 27, 27)
+                            .addComponent(jButton26))
+                        .addGroup(jd_consultasLayout.createSequentialGroup()
+                            .addComponent(jButton30)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton39))
+                        .addGroup(jd_consultasLayout.createSequentialGroup()
+                            .addComponent(jButton41)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton42)))
+                    .addComponent(jButton44))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         jd_consultasLayout.setVerticalGroup(
             jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(jd_consultasLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton24)
+                    .addComponent(jButton25)
+                    .addComponent(jButton26))
+                .addGap(18, 18, 18)
+                .addGroup(jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton27)
+                    .addComponent(jButton30)
+                    .addComponent(jButton39))
+                .addGap(18, 18, 18)
+                .addGroup(jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton40)
+                    .addComponent(jButton41)
+                    .addComponent(jButton42))
+                .addGap(18, 18, 18)
+                .addGroup(jd_consultasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton43)
+                    .addComponent(jButton44))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -2288,6 +2417,244 @@ public class Principal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_eliminar_premioActionPerformed
 
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        System.out.println("Obtener todas las peliculas en las que el director ha trabajado tambien como actor. ");
+        try{
+            String consulta="SELECT titulo_p,\n" +
+                            "  ano_produccion AS Fecha,\n" +
+                            "  nombre_persona\n" +
+                            "FROM Trabajo Text,\n" +
+                            "  Pelicula\n" +
+                            "WHERE pelicula.cip  =text.cip\n" +
+                            "AND tarea           ='Director'\n" +
+                            "AND nombre_persona IN\n" +
+                            "  (SELECT nombre_persona\n" +
+                            "  FROM Trabajo Tint\n" +
+                            "  WHERE tarea <> 'Productor'\n" +
+                            "  AND tarea   <> 'Director'\n" +
+                            "  AND tint.cip =text.cip\n" +
+                            "  )";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+        
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        System.out.println("Obtener todos los premios obtenidos por peliculas dirigidas por Isaac Hayes en los\n" +
+"oscars.");
+        try{     
+            String consulta="SELECT titulo_p,\n" +
+                                "  festival,\n" +
+                                "  certamen AS Anio,\n" +
+                                "  premio\n" +
+                                "FROM OTORGO,\n" +
+                                "  TRABAJO,\n" +
+                                "  PELICULA\n" +
+                                "WHERE TRABAJO.nombre_persona = 'Isaac Hayes'\n" +
+                                "AND TRABAJO.tarea            = 'Director'\n" +
+                                "AND TRABAJO.cip              =OTORGO.cip\n" +
+                                "AND OTORGO.cip               =PELICULA.cip\n" +
+                                "AND OTORGO.festival          ='Oscars'";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        System.out.println("Obtener los actores que han obtenido ´Oscars´ y cuantos cada uno.");
+        try{     
+            String consulta="SELECT DISTINCT nombre_Persona,\n" +
+            "  COUNT(festival) AS Numero\n" +
+            "FROM RECONOCIMIENTO NATURAL JOIN TRABAJO\n" +
+            "WHERE festival='Oscars'\n" +
+            "AND (Tarea = 'Actor Principal')\n" +
+            "GROUP BY nombre_persona";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        System.out.println("Existe una pelicula en la base de datos con un presupuesto superior al de ´Viaje \n" +
+"al centro de la tierra´ y producida en 1995, cual es.");
+        try{     
+            String consulta="SELECT titulo_p  AS PELICULA,\n" +
+            "  ano_produccion AS FECHA_DE_PRODUCCION\n" +
+            "FROM PELICULA\n" +
+            "WHERE presupuesto >\n" +
+            "  (SELECT presupuesto\n" +
+            "  FROM PELICULA\n" +
+            "  WHERE titulo_p='Viaje al centro de la tierra'\n" +
+            "  )";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+             System.out.println("Obtener el nombre y numero de salas que tiene cada cine de Madrid.");
+        try{     
+            String consulta="SELECT CINE.cine   AS Nombre_Cine,\n" +
+                            "  COUNT(SALA.Sala) AS Numero_Salas\n" +
+                            "FROM CINE,\n" +
+                            "  SALA\n" +
+                            "WHERE CINE.ciudad_cine='Madrid'\n" +
+                            "AND CINE.cine         =SALA.cine\n" +
+                            "GROUP BY CINE.cine ";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+             System.out.println("/*----6----\n" +
+"Obtener una relacion de los premios que han quedado desiertos en los ´oscars´ de\n" +
+"1997 ¿Qué premio (s)?");
+        try{     
+            String consulta="SELECT reconocimiento.festival,\n" +
+                "  reconocimiento.certamen,\n" +
+                "  t.premio\n" +
+                "FROM reconocimiento,\n" +
+                "  festival_premio,\n" +
+                "  (\n" +
+                "  (SELECT premio FROM FESTIVAL_PREMIO WHERE FESTIVAL='Oscars'\n" +
+                "  )\n" +
+                "MINUS\n" +
+                "  (\n" +
+                "  (SELECT premio\n" +
+                "  FROM Otorgo\n" +
+                "  WHERE otorgo.certamen='1997'\n" +
+                "  AND otorgo.festival  ='Oscars'\n" +
+                "  )\n" +
+                "UNION\n" +
+                "  (SELECT premio\n" +
+                "  FROM reconocimiento\n" +
+                "  WHERE reconocimiento.certamen='1997'\n" +
+                "  AND reconocimiento.festival  ='Oscars'\n" +
+                "  ))) T\n" +
+                "WHERE festival_premio.premio=T.premio\n" +
+                "AND reconocimiento.festival ='Oscars'\n" +
+                "AND reconocimiento.certamen =1997\n" +
+                "AND rownum                 <=1 ";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+            System.out.println("/*----7----\n" +
+                    "Obtener el titulo y la nacionalidad de aquellas peliculas que han sido proyectadas en\n" +
+                    "dos salas diferentes dentro de un mismo cine.");
+        try{     
+            String consulta="SELECT DISTINCT titulo_p,\n" +
+            "  nacionalidad\n" +
+            "FROM\n" +
+            "  (SELECT DISTINCT titulo_p,\n" +
+            "    nacionalidad,\n" +
+            "    COUNT(Sala) AS Salas\n" +
+            "  FROM proyeccion NATURAL\n" +
+            "  JOIN pelicula\n" +
+            "  GROUP BY cip,\n" +
+            "    cine,\n" +
+            "    titulo_p,\n" +
+            "    nacionalidad\n" +
+            "  HAVING COUNT(Sala)>1\n" +
+            "  ) ";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+             System.out.println("/*----8----\n" +
+                                "Obtener el titulo y los actores principales de aquellas peliculas en las cuales han\n" +
+                                "intervenido un mayor numero de actores principales.");
+        try{     
+            String consulta="SELECT titulo_p,\n" +
+                "  nombre_persona\n" +
+                "FROM\n" +
+                "  (SELECT cip,\n" +
+                "    COUNT(Nombre_persona) AS Numero\n" +
+                "  FROM trabajo\n" +
+                "  WHERE tarea='Actor Principal'\n" +
+                "  GROUP BY cip\n" +
+                "  HAVING COUNT(Nombre_persona)> 2\n" +
+                "  ) E1 NATURAL\n" +
+                "JOIN pelicula NATURAL\n" +
+                "JOIN trabajo" +
+                            "  ) ";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+           System.out.println("/*----10----\n" +
+                            "Obtener el nombre y nacionalidad del ´director´ que ha actuado mas veces como\n" +
+                            "actor, ya sea principal o de otro tipo.\n" +
+                            "*/ ");
+        try{     
+            String consulta="SELECT nombre_persona,\n" +
+                            "  nacionalidad,\n" +
+                            "  veces\n" +
+                            "FROM trabajo,\n" +
+                            "  pelicula,\n" +
+                            "  (SELECT nombre_persona AS nombre,\n" +
+                            "    COUNT(tarea)         AS veces\n" +
+                            "  FROM TRABAJO\n" +
+                            "  WHERE tarea LIKE '%Actor%'\n" +
+                            "  GROUP BY nombre_persona\n" +
+                            "  ) T\n" +
+                            "WHERE pelicula.cip=trabajo.cip\n" +
+                            "AND trabajo.tarea ='Director'\n" +
+                            "AND T.nombre      = trabajo.nombre_persona\n" +
+                            "AND rownum       <=1";
+            LinkedList<String>resultado =query.query(consulta);
+            for (int i = 0; i < resultado.size(); i++) {
+                System.out.print(resultado.get(i));
+            }
+        }catch(Exception e){
+            
+        }
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton43ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2360,9 +2727,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
@@ -2371,7 +2743,13 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton40;
+    private javax.swing.JButton jButton41;
+    private javax.swing.JButton jButton42;
+    private javax.swing.JButton jButton43;
+    private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
