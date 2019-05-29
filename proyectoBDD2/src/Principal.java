@@ -2434,4 +2434,5 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField tf_titulo1;
     private javax.swing.JTextField tipo_sala_modificar_sala;
     // End of variables declaration//GEN-END:variables
+    public static sqlclass query = new sqlclass();
 }
